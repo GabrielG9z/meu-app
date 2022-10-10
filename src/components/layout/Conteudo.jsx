@@ -5,6 +5,8 @@ const Conteudo = () => {
     <>
       <main>
         <section>
+          {/* AQUI É COMENTÁRIO DENTRO DO JSX */}
+          <h2>Conteúdo do Site</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Non porro
             maxime dolores laudantium illo commodi et excepturi accusamus odit

@@ -1,0 +1,18 @@
+main {
+  width: 90vw;
+  margin: auto;
+}
+
+.subtitulo {
+  text-align: center;
+}
+
+.destaque {
+  background-color: chartreuse;
+  font-weight: bold;
+  padding: 0.5rem;
+}
+
+.sombra {
+  text-shadow: black 1px 1px 3px;
+}

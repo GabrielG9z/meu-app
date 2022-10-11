@@ -1,7 +1,7 @@
-import Cabecalho from "./components/layout/Cabecalho";
-import Conteudo from "./components/layout/Conteudo";
-import Footer from "./components/layout/Footer";
-import Artigo from "./components/Artigo";
+import Cabecalho from "./components/layout/Cabecalho/Cabecalho";
+import Conteudo from "./components/layout/Conteudo/Conteudo";
+import Footer from "./components/layout/Footer/Footer";
+import Artigo from "./components/layout/Conteudo/Artigo";
 
 const App = () => {
   return (

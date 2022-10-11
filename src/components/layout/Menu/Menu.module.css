@@ -1,0 +1,12 @@
+a {
+  font-size: 27px;
+  text-decoration: none;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: darkgreen;
+}
+nav {
+  display: flex;
+  background-color: darkgoldenrod;
+  justify-content: space-around;
+}

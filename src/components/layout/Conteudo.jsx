@@ -33,6 +33,29 @@ const Conteudo = () => {
           <h2>Conteúdo do site...</h2>
           <p></p>
 
+          {artigos.map(({ id, titulo, subtitulo, curso, texto }) => (
+            <Artigo
+              key={id}
+              titulo={titulo}
+              subtitulo={subtitulo}
+              curso={curso}
+            >
+              {texto}
+            </Artigo>
+          ))}
+        </section>
+      </main>
+    </>
+  );
+};
+
+{
+  /* Versão sem o desctructuring */
+  /* <main>
+        <section>
+          <h2>Conteúdo do site...</h2>
+          <p></p>
+
           {artigos.map((artigo) => (
             <Artigo
               key={artigo.id}
@@ -44,9 +67,7 @@ const Conteudo = () => {
             </Artigo>
           ))}
         </section>
-      </main>
-    </>
-  );
-};
+      </main> */
+}
 
 export default Conteudo;

@@ -1,24 +1,30 @@
+import { useState } from "react";
 import Artigo from "../Artigo";
 
 const Conteudo = () => {
+  const [corFundo, setCorFundo] = useState();
+  const [contador, setContador] = useState(0);
+
+  const fundoAmarelo = () => setCorFundo("#FFEE21");
+  const fundoAzul = () => setCorFundo("lightblue");
+  const fundoVerde = () => setCorFundo("green");
+
+  const atualizaContagem = () => setContador(contador + 1);
+
   return (
-    <>
-      <main>
-        <section>
-          {/* AQUI É COMENTÁRIO DENTRO DO JSX */}
-          <h2>Conteúdo do Site</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Non porro
-            maxime dolores laudantium illo commodi et excepturi accusamus odit
-            hic. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Dolores, cumque.
-          </p>
-          <Artigo />
-          <Artigo />
-          <Artigo />
-        </section>
-      </main>
-    </>
+    <main style={{ backgroundColor: corFundo }}>
+      <button onMouseOver={fundoAmarelo}>Amarelo</button>
+      <button onMouseOver={fundoAzul}>Azul</button>
+      <button onMouseOver={fundoVerde}>Verde</button>
+
+      <section>
+        <h2 onClick={atualizaContagem}>Contador: {contador} </h2>
+      </section>
+
+      <Artigo />
+      <Artigo />
+      <Artigo />
+    </main>
   );
 };
 

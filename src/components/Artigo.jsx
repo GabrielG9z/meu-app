@@ -1,16 +1,11 @@
-const Artigo = () => {
+const Artigo = (props) => {
   return (
     <article>
-      <h3>Titulo....</h3>
-      <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi cum
-        fuga, adipisci vero autem maxime dolor ipsum totam asperiores magnam
-        architecto repellat distinctio harum sint possimus error iste non.
-        Perspiciatis. Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-        Consequatur corrupti ex quas molestiae officia laboriosam voluptatum
-        neque maxime praesentium deserunt. Labore ex at exercitationem impedit
-        voluptatem consequuntur! Quidem, et corrupti!
-      </p>
+      <h3>{props.titulo}</h3>
+      <h4>{props.subtitulo}</h4>
+      <h5>{props.curso}</h5>
+      {/* Sempre que for o conteúdo entre as tags deve-se ser usado a tag (children). */}
+      <p>{props.children}</p>
     </article>
   );
 };

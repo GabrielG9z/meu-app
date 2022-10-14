@@ -1,16 +1,15 @@
 import Cabecalho from "./components/layout/Cabecalho";
-import Conteudo from "./components/layout/Conteudo";
+import Home from "./pages/Home";
 import Footer from "./components/layout/Footer";
-import Artigo from "./components/Artigo";
-
+import Produtos from "./pages/Produtos";
+import Servicos from "./pages/Servicos";
 const App = () => {
   return (
     <>
       <Cabecalho />
-      <Conteudo />
-      <Artigo />
-      <Artigo />
-
+      <Home />
+      <Produtos />
+      <Servicos />
       <Footer />
     </>
   );
